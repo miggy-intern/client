@@ -12,20 +12,23 @@ const ResetPasswordForm = () => {
         const formData = new FormData(event.target);
         const newPassword = formData.get('newPassword');
         const confirmPassword = formData.get('confirmPassword');
+        const res = {
+            ok: false,
+            message: ''
+        };
 
-        const response = await fetch('/api/reset-password', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ newPassword, confirmPassword }),
-        });
-
-        if (response.ok) {
-            alert("response is okay")
+        if (newPassword === confirmPassword) {
+            res.ok = true;
+            res.message = "Passwords match.";
+        } else {
+            res.ok = false;
+            res.message = "Passwords do not match.";
+        }
+        if (res.ok) {
+            alert(res.message);
             navigate('/congratulations');
         } else {
-            alert('response is not okay');
+            alert(res.message);
             navigate('/dissapointment');
         }
     };
