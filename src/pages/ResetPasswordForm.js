@@ -26,10 +26,9 @@ const ResetPasswordForm = () => {
         }
         if (res.ok) {
             alert(res.message);
-            navigate('/congratulations');
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.ac.laiwan&hl=en&gl=US&pli=1';
         } else {
             alert(res.message);
-            navigate('/dissapointment');
         }
     };
 
