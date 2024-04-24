@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/LoginForm.css';
+import '../styles/ResetPasswordForm.css';
 import { useNavigate } from 'react-router-dom';
 import { LuUser } from "react-icons/lu";
 import { RiLockPasswordLine } from "react-icons/ri";
