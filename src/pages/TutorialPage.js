@@ -30,18 +30,43 @@ const TutorialPage = () => {
                         https://h5.laiwanpai.com/
                     </a>
                 </p>
+
+                <div className="image-placeholder">
+                    <p>Goplay360 Website</p>
+                </div>
+
                 <p className="NormalText">
                     2. Click on the share icon at the bottom of the page.
                 </p>
+
+                <div className="image-placeholder">
+                    <p>Show Share Icon</p>
+                </div>
+
+
                 <p className="NormalText">
                     3. Scroll down the page and click 'Add to Home Screen'.
                 </p>
+
+                <div className="image-placeholder">
+                    <p>Button of 'Add to Home Screen'</p>
+                </div>
+
                 <p className="NormalText">
                     4. Confirm 'Add'.
                 </p>
+
+                <div className="image-placeholder">
+                    <p>Confirm Add</p>
+                </div>
+
                 <p className="NormalText">
                     5. You can now see the GoPlay360 icon on your mobile home screen.
                 </p>
+
+                <div className="image-placeholder">
+                    <p>Output of Step 5</p>
+                </div>
 
             </div>
         </div>
