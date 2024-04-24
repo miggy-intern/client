@@ -6,12 +6,12 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     min-height: 100vh;
-    background-image: url("file:///D:/Miguel%20Files%20D/webpage_03/client/Background.png");
+    background-image: url("../Background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    background-attachment: fixed; /* Fix the background image */
+    background-attachment: fixed;
 }
 
 .nav {
